@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-image: linear-gradient(#3B8BEB, #84ceeb);
+    padding-top: 60px;
+    font-size: 20px;
+}
+
+nav{
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: top 0.3s;
+    background-color: #3B8BEB;
+    border-bottom: white solid 3px;
+}
+
+nav a{
+    float: left;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    -webkit-transition: color 1s;
+}
+
+nav a:hover {
+    color: #88bdff;
+    -webkit-transition: color 1s;
+}
+
+#myLinks{
+    flex-direction: row;
+}
+
+nav a.icon {
+    display: inline-block;
+    right: 0;
+    top: 0;
+}
+
+#intro {
+    display: inline-block;
+    width: 95%;
+    text-align: center;
+    padding: 2% 2% 3%;
+    color: white;
+    font-size: 25px;
+}
+
+#intro p{
+    padding: 0% 25%;
+    width: 50%;
+}
+
+#projects {
+    display: inline-block;
+    width: 95%;
+    text-align: center;
+    padding: 2% 2% 3%;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    justify-content: justify;
+    grid-gap: 20px;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+}
+
+.project {
+    text-align: justify;
+    background-color: #418eec;
+    border-top: 2px solid #90d1eb;
+    border-left: 2px solid #89cfeb;
+    border-right: 2px solid #7fcbe9;
+    border-bottom: 2px solid #7ac6e4;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.project a {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    background-color: #5d9be7;
+    border-radius: 5px;
+    margin: 5px 0;
+    -webkit-transition: background 1s;
+}
+
+.project a:hover {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    background-color: #8dbaf1;
+    border-radius: 5px;
+    margin: 5px 0;
+    -webkit-transition: background 1s;
+}
+
+.project h3 {
+    padding: 10px;
+}
+
+.project p {
+    padding: 5px;
+}
+
+.project img {
+    padding: 5px;
+}
+
+#about {
+    display: inline-block;
+    width: 95%;
+    text-align: center;
+    padding: 2% 2% 3%;
+    color: white;
+}
+
+#lang {
+    display: inline-block;
+    width: 95%;
+    text-align: center;
+    padding: 2% 2% 3%;
+    color: white;
+}
+
+#lang p {
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact {
+    display: inline-block;
+    width: 95%;
+    text-align: center;
+    padding: 2% 2% 3%;
+    color: white;
+}
+
+#contact p {
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact p a {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    width: 50%;
+    background-color: #5d9be7;
+    border-radius: 5px;
+    margin: 5px 0;
+    -webkit-transition: background 1s;
+    font-size: 23px;
+}
+
+#contact p a:hover {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    background-color: #8dbaf1;
+    border-radius: 5px;
+    margin: 5px 0;
+    -webkit-transition: background 1s;
+}
+
+#contact p span {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    width: 50%;
+    background-color: #5d9be7;
+    border-radius: 5px;
+    margin: 5px 0;
+    -webkit-transition: background 1s;
+    font-size: 23px;
+}
+
+#contact p span:hover {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    background-color: #8dbaf1;
+    border-radius: 5px;
+    margin: 5px 0;
+    -webkit-transition: background 1s;
+}
+
+@media screen and (max-width: 670px) {
+    nav a.home{
+        display: inline;
+        float: left;
+    }
+
+    nav a.icon{
+        display: inline;
+        float: right;
+    }
+
+    #myLinks{
+        flex-direction: column;
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    #intro {
+        font-size: 20px;
+        padding: 3% 0%;
+        width: 100%;
+    }
+
+    #intro p {
+        padding: 0;
+        width: 100%;
+    }
+
+    #projects {
+        font-size: 20px;
+        padding: 3% 0%;
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+
+    .project {
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .project a {
+        width: 100%;
+    }
+
+    #about {
+        font-size: 20px;
+        padding: 3% 0%;
+        width: 100%;
+    }
+
+    #about p {
+        padding: 5px;
+    }
+
+    #lang {
+        font-size: 20px;
+        padding: 3% 0%;
+        width: 100%;
+    }
+
+    #contact {
+        font-size: 20px;
+        padding: 3% 0%;
+        width: 100%;
+    }
+
+    #contact p a {
+        width: 80%;
+    }
+
+    #contact p span {
+        width: 80%;
+    }
+}

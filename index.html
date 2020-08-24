@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leon Sovič page">
+    <meta name="keywords" content="Leon Sovič, Leon, Sovič, software developer">
+    <meta name="author" content="Leon Sovič">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/icon.png">
+    <title>Leon Sovič</title>
+</head>
+<body>
+    <nav id="navbar">
+        <a class="home" onclick="topFunction()" href="">Leon Sovič</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div id="myLinks">
+            <a href="#intro" onclick="disappear()">Intro </a>
+            <a href="#projects" onclick="disappear()">Projects</a>
+            <a href="#about" onclick="disappear()">About</a>
+            <a href="#lang" onclick="disappear()">My languages</a>
+            <a href="#contact" onclick="disappear()">Contact</a>
+        </div>
+    </nav>
+    <script>
+        var x = document.getElementById("myLinks");
+        if (screen.width >= 670) {
+            x.style.display = "flex";
+        } else {
+            x.style.display = "none";
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        function width () {
+            if (screen.width >= 670) {
+                return "row";
+            } else {
+                return "column";
+            }
+        }
+
+        function disappear() {
+            if (screen.width <= 670) {
+                x.style.display = "none";
+                document.getElementById("navbar").style.top = "-52px";
+            }
+        }
+
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+                x.style.flex.direction = width();
+            } else {
+                x.style.display = "flex";
+                x.style.flex.direction = width();
+            }
+        }
+    </script>
+    <main>
+
+        <div id="intro">
+            <h2>Introduction</h2>
+            <p class="text">Hi! My name is Leon Sovič and I am the author of this website. I made this website for the purpose of introducing myself as a software developer. This website is here so anyone can look through my work and my skill set. In the following sections you can see that and at the end there are my contacts and my links for more info.</p>
+        </div>
+
+        <div id="projects">
+            <h2>My projects</h2>
+            <div class="grid">
+                <div class="project">
+                    <img src="img/webpage-icon.png" alt="webpage icon" height="45px"> 
+                    <h3>SPA - Online portfolio</h3>
+                    <p>A static one page website (or SPA) that serves as a intruduction page for myself. </p>
+                    <p>Build with HTML5, CSS3 and JavaScript.</p>
+                    <a href="" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
+                    <a href="" target="blank"><i class="fa fa-eye"></i> View Live Site</a>
+                </div>
+
+                <div class="project">
+                    <img src="img/python.png" alt="python icon" height="45px"> 
+                    <h3>Webscraper with python</h3>
+                    <p>I made a webscraper with python and its BeautifulSoup library.</p>
+                    <p>I made it with a tutorial but in another branch I used and modified it on my own.</p>
+                    <a href="https://github.com/SovicLeon/webscraper" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
+                </div>
+
+                <div class="project">
+                    <img src="img/php.jpg" alt="php icon" height="45px"> 
+                    <h3>To-do list</h3>
+                    <p>I made a to-do list website that uses php as its backend and MySql for its database.</p>
+                    <p>The first backend language that I learned is php so I am most familiar with it's basics and some more advanced parts of it.</p>
+                    <p>MySql is also the first database that I have learned so I am most familiar with it.</p>
+                    <a href="" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
+                    <a href="" target="blank"><i class="fa fa-eye"></i> View Live Site</a>
+                </div>
+
+                <div class="project">
+                    <img src="img/c.png" alt="C icon" height="45px"> 
+                    <h3>Robotics</h3>
+                    <p>This is code written in C that is used by Microsoft Robotics Dev Studio 4 for the RoboCup. </p>
+                    <p>When I was in the robotics club at my school I was writing this code (about a year on and off), it is used for the virtual robot simulation.</p>
+                    <a href="https://github.com/SovicLeon/robot" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="about">
+            <h2>About</h2>
+            <p> I made this website so I can introduce myself as a software developer and show off my work and skills. As you can see in the projects section I am all around the place with software development. As of now I am focusing on web development. </p> 
+            <p> I started off with non OOP in C++ (so basically C) in high school, I really liked it and was really good at it but I didn't have any motivation to go beyond what we were doing in school, by that I mean mostly OOP as I didn't have any use for it. The next year I started a bit of PHP on my own and I really like it, I could use it in a "useful" way. But I didn't continue and I also didn't learn HTML or CSS or JavaScript. The next year we had web development in school and there I learned HTML5 and CSS3 to a really good level and we also had PHP where I found it even more interesting with all the new knowledge about web development. Then I focused on learning PHP to a level where I felt comfortable programming with it on my own. In the meantime of these years (2. and 3. year of high school) I learned the basics of Python then some basics of Java and then the basics of JavaScript. </p>
+            <p> As of now I am trying to learn JavaScript at a higher level, I also did some tutorials for some MERN stack web apps, some Node.js and some ECMAScript 6. I am still working with PHP and MySql, where I am learning OOP in PHP and after that I am aiming to learn a PHP framework. In the future I am looking at some Python, where I would focus on data analysis and some more Java as I would need it in school/university. </p>
+
+        </div>
+
+        <div id="lang">
+            <h2>Languages</h2>
+            <p><img src="img/c.png" alt="c icon" height="50px"> <span> The first language that I have learned is non OOP in C++ or C so I am most familiar with it. I have used it in robotics (simulation) and in a programming competition. </span></p>
+            <p><img src="img/php.jpg" alt="php icon" height="50px"> <span> The first backend language that I have learned is php so I am most familiar with its basics and some more advanced parts of it. </span></p>
+            <p><img src="img/html.png" alt="html icon" height="50px"> <span> I know the main point of HTML and am good at it. I think of it as a necessary tool for web development. </span></p>
+            <p><img src="img/css.png" alt="css icon" height="50px"> <span> Like HTML it's a common tool and part of the wider knowledge of web development that I have. </span></p>
+            <p><img src="img/javascript.png" alt="javascript icon" height="50px"> <span> I know the basics of JavaScript and I am still learning it. I am trying to learn a bit more of backend JavaScript programming with Node.js. </span></p>
+            <p><img src="img/python.png" alt="python icon" height="50px"> <span> I know the basics but I am not confident in using Python on my own (without the help of the internet). </span></p>
+            <p><img src="img/Java.png" alt="java icon" height="50px"> <span> Similar to my skill in Python, I am not confident in my skills in Java but I know some basics. </span></p>
+        </div>
+
+        <div id="contact">
+            <h2>Contact</h2>
+            <p><a href="https://github.com/SovicLeon" target="blank"><i class="fa fa-github"></i> My Github </a></p>
+            <p><span><i class="fa fa-envelope"></i> My email: sovicleon@gmail.com </span></p>
+        </div>
+
+    </main>
+
+    <script>
+        // Hide navbar on scroll
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-52px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
+</body>
+</html>
