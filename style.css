@@ -208,6 +208,17 @@ nav a.icon {
     -webkit-transition: background 1s;
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#84ceebdc, #3B8BEB);
+    color: white;
+    height: 35px;
+    width: 100%;
+    font-size: 18px;
+}
+
 @media screen and (max-width: 670px) {
     nav a.home{
         display: inline;
