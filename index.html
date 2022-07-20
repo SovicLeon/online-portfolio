@@ -47,9 +47,10 @@
         }
 
         function disappear() {
+            myFunction();
             if (screen.width <= 670) {
                 x.style.display = "none";
-                document.getElementById("navbar").style.top = "-52px";
+                document.getElementById("navbar").style.top = "-55px";
             }
         }
 
@@ -150,7 +151,7 @@
           if (prevScrollpos > currentScrollPos) {
             document.getElementById("navbar").style.top = "0";
           } else {
-            document.getElementById("navbar").style.top = "-52px";
+            document.getElementById("navbar").style.top = "-55px";
           }
           prevScrollpos = currentScrollPos;
         }
