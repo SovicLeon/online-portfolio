@@ -7,7 +7,7 @@
     <meta name="keywords" content="Leon Sovič, Leon, Sovič, software developer">
     <meta name="author" content="Leon Sovič">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/59212d653a.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/icon.png">
     <title>Leon Sovič</title>
 </head>
@@ -15,14 +15,15 @@
     <nav id="navbar">
         <a class="home" onclick="topFunction()" href="">Leon Sovič</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+            <i class="fa-solid fa-bars"></i>
         </a>
         <div id="myLinks">
             <a href="#intro" onclick="disappear()">Intro </a>
             <a href="#projects" onclick="disappear()">Projects</a>
             <a href="#about" onclick="disappear()">About</a>
-            <a href="#lang" onclick="disappear()">My languages</a>
+            <a href="#lang" onclick="disappear()">Skills</a>
             <a href="#contact" onclick="disappear()">Contact</a>
+            <a href="CV-Leon_Sovic.pdf" target="blank">CV</a>
         </div>
     </nav>
     <script>
@@ -47,8 +48,8 @@
         }
 
         function disappear() {
-            myFunction();
             if (screen.width <= 670) {
+                myFunction();
                 x.style.display = "none";
                 document.getElementById("navbar").style.top = "-55px";
             }
@@ -64,83 +65,173 @@
                 x.style.flex.direction = width();
             }
         }
+
     </script>
     <main>
 
         <div id="intro">
             <h2>Introduction</h2>
-            <p class="text">Hi! My name is Leon Sovič and I am the author of this website. I made this website for the purpose of introducing myself as a software developer. This website is here so anyone can look through my work and my skill set. In the following sections you can see that and at the end there are my contacts and my links for more info.</p>
+            <p class="text">Hi! My name is Leon Sovič and I am the author of this website. I made this website for the purpose of introducing myself as a software developer. I am a 3rd year student at FERI Maribor studying Computer Science and Information Technologies(<a href="https://feri.um.si/en/study/programmes/first-cycle/vs/rit/" target="blank">RIT VS</a>).</p>
+        </div>
+
+        <div id="contact">
+            <p><a href="CV-Leon_Sovic.pdf" target="blank"><i class="fa fa-file"></i> My CV </a></p>
         </div>
 
         <div id="projects">
             <h2>My projects</h2>
             <div class="grid">
+
                 <div class="project">
-                    <img src="img/webpage-icon.png" alt="webpage icon" height="45px"> 
-                    <h3>SPA - Online portfolio</h3>
-                    <p>A static one page website (or SPA) that serves as a intruduction page for myself. </p>
-                    <p>Build with HTML5, CSS3 and JavaScript.</p>
-                    <a href="https://github.com/SovicLeon/online-portfolio" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
-                    <a href="https://sovicleon.github.io/online-portfolio/" target="blank"><i class="fa fa-eye"></i> View Live Site</a>
+                    <i class="fa-brands fa-php"></i> 
+                    <h3>Fitness tracking app</h3>
+                    <p>Written in plain HTML, CSS, PHP and some JS I build this web app just using these four technologies to master the basics for my final project in highscool. </p>
+                    <p></p>
+                    <a href="https://github.com/SovicLeon/FitTrack" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
+                    <a href="https://leonsovic.000webhostapp.com/main/index.php" target="blank"><i class="fa fa-eye"></i> View Live Site</a>
                 </div>
 
                 <div class="project">
-                    <img src="img/python.png" alt="python icon" height="45px"> 
-                    <h3>Webscraper with python</h3>
-                    <p>I made a webscraper with python and its BeautifulSoup library.</p>
-                    <p>I made it with a tutorial but in another branch I used and modified it on my own.</p>
-                    <a href="https://github.com/SovicLeon/webscraper" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
+                    <i class="fa-brands fa-android"></i>
+                    <h3>Login protected notes mobile app</h3>
+                    <p>Made with Kotlin and jetpack compose.</p>
+                    <p>After a mobile app development class at my university where I created 2 basic apps first using data binding, xml, activities and then navigation and fragments, I tried on my own with jetpack compose. </p>
+                    <p></p>
+                    <a href="https://github.com/SovicLeon/EncryptedNotesAndroid" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.leonsovic.encryption&pli=1" target="blank"><i class="fa fa-eye"></i> View PlayStore Page</a>
                 </div>
 
                 <div class="project">
-                    <img src="img/php.jpg" alt="php icon" height="45px"> 
-                    <h3>To-do list</h3>
-                    <p>I made a to-do list website that uses php as its backend and MySql for its database.</p>
-                    <p>The first backend language that I learned is php so I am most familiar with it's basics and some more advanced parts of it.</p>
-                    <p>MySql is also the first database that I have learned so I am most familiar with it.</p>
-                    <a href="https://github.com/SovicLeon/to-do-list" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
-                    <a href="" target="blank"><i class="fa fa-eye"></i> View Live Site</a>
+                    <i class="fa-solid fa-c"></i>
+                    <h3>File transfer using sockets in C</h3>
+                    <p>Written in C, using server and client.</p>
+                    <p>Using C sockets for file transfer, works with any file type, also transfers file structure.</p>
+                    <p></p>
+                    <a href="https://github.com/SovicLeon/FileTransferUsingSocketsInC" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
                 </div>
 
                 <div class="project">
-                    <img src="img/c.png" alt="C icon" height="45px"> 
-                    <h3>Robotics</h3>
-                    <p>This is code written in C that is used by Microsoft Robotics Dev Studio 4 for the RoboCup. </p>
-                    <p>When I was in the robotics club at my school I was writing this code (about a year on and off), it is used for the virtual robot simulation.</p>
-                    <a href="https://github.com/SovicLeon/robot" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
+                    <i class="fa-brands fa-js"></i>
+                    <h3>TicTacToe with sockets in NodeJS</h3>
+                    <p>Written in JavaScript using sockets.io.</p>
+                    <p>Run 2 instances of the server, with different ports. The game is displayed with the website opening on the specific port of the server.</p>
+                    <p></p>
+                    <a href="https://github.com/SovicLeon/TicTacToe" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
                 </div>
+
+                <div class="project">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>POW blockchain in NodeJS</h3>
+                    <p>Written in JavaScript using sockets.io and a bit of Express for visual presentation.</p>
+                    <p>Run as many servers as you want, connect them and they will eventually sync together.</p>
+                    <p>As it its POW it all the servers or miners compete with who can provide the next correct block to be added to the chain. The new block is confirmed/validated by the miner itself and also the other miners to accept the new block/chain.</p>
+                    <p></p>
+                    <a href="https://github.com/SovicLeon/NodeJSblockchain" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
+                </div>
+
+                <div class="project">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h3>Unity game</h3>
+                    <p>Made in Unity with C# with a couple of friends.</p>
+                    <p>Simple 2d 8bit style game with rougelike and rougelite elements.</p>
+                    <p>Made scripts, sprites and game mechanics. Is playable, has enemies, a boss, powerups, health, level and a weapon.</p>
+                    <p></p>
+                    <a href="https://github.com/SovicLeon/RPS_projekt_game" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
+                </div>
+
+                <div class="project">
+                    <i class="fa-brands fa-android"></i>
+                    <h3>Mountain trail tracker mobile app</h3>
+                    <p>Made with Kotlin, navigation and fragments.</p>
+                    <p>My second mobile app. Incorporates a map with OpenStreetMap where you can draw your trail and the length and elevation will be calcluated automaticaly and be added to your trails and saved locally. The elevation calculation utilizes a API that returns the elevation difference.</p>
+                    <p></p>
+                    <a href="https://github.com/SovicLeon/MountainTrailTrackerMobileApp" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>                    
+                </div>
+
+                <div class="project">
+                    <i class="fa-brands fa-docker"></i>
+                    <h3>Docker deployable project</h3>
+                    <p>Made with Docker compose and is deployable instantly.</p>
+                    <p>Inside is a project I made as a task for a position at a company. It has mulitple Dockerfiles for each aspect of the whole app. It should display scraped apartment listings with paging.</p>
+                    <p>It has a simple NodeJS Express backend that returns data from PostgreSQL, the frontend is a simple React app that has paging and the web scraper where I got the data and then on setup the Dockerfile puts the data into the PostgreSQL database.</p>
+                    <p></p>
+                    <a href="https://github.com/SovicLeon/Task" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>                    
+                </div>
+
+                <div class="project">
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Projects with OpenCV and NumPy</h3>
+                    <p>Projects that process images.</p>
+                    <p>Using Python, Numpy and manual calculation for better usage I used OpenCV.</p>
+                    <p></p>
+                    <p>Outputs many version of the image with using kmeans and different settings for it.</p>
+                    <a href="https://github.com/SovicLeon/kmeansPython" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
+                    <p></p>
+                    <p>Image filtering and edge detectors.</p>
+                    <p>Roberts, Prewitt, Sobel and Canny.</p>
+                    <a href="https://github.com/SovicLeon/ImageFilteringEdgeDetectors" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
+                    <p></p>
+                    <p>Motion detection using colors.</p>
+                    <a href="https://github.com/SovicLeon/MotionDetectionUsingColors" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
+                </div>
+
+                <div class="project">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Road and traffic quality app</h3>
+                    <p>A project with a backend, frontend, web scraper, face recognition and mobile app, made with others.</p>
+                    <p>Project that lets the user login with 2fa face recognition on the mobile app and send location and sensor data to the backend where it is calculated and saved.</p>
+                    <p>On the backend web app the saved and calculated sections are then combined with the data of the web scraper that gets traffic conter data for the relevant location based on GPS.</p>
+                    <p>On the front end app the user can view his live ride or any of his past on a map with sections displayed with the matching quality.</p>
+                    <p>The backend manages and connects everything. The backend requests/connects face detection, MongoDB and web scraper.</p>
+                    <p></p>
+                    <p>Frontend build in React.</p>
+                    <a href="https://github.com/SovicLeon/ProjektnaNaloga_SpletniDel_Frontend" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
+                    <p></p>
+                    <p>Backend build with NodeJS, Express and mongoose. Also contains the face recognition written in Python.</p>
+                    <a href="https://github.com/SovicLeon/ProjektnaNaloga_SpletniDel_Backend" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
+                    <p></p>
+                    <p>Simple mobile app built with Kotlin.</p>
+                    <a href="https://github.com/SovicLeon/ProjektnaNaloga_MobilnaAplikacija" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
+                    <p></p>
+                    <p>Web scraper build with NodeJS and Express.</p>
+                    <a href="https://github.com/SovicLeon/ProjektnaNaloga_Scraper" target="blank"><i class="fa fa-github"></i> Github Reposetory</a>
+                </div>
+
             </div>
         </div>
 
         <div id="about">
             <h2>About</h2>
-            <p> I made this website so I can introduce myself as a software developer and show off my work and skills. As you can see in the projects section I am all around the place with software development. As of now I am focusing on web development. </p> 
-            <p> I started off with non OOP in C++ (so basically C) in high school, I really liked it and was really good at it but I didn't have any motivation to go beyond what we were doing in school, by that I mean mostly OOP as I didn't have any use for it. The next year I started a bit of PHP on my own and I really like it, I could use it in a "useful" way. But I didn't continue and I also didn't learn HTML or CSS or JavaScript. The next year we had web development in school and there I learned HTML5 and CSS3 to a really good level and we also had PHP where I found it even more interesting with all the new knowledge about web development. Then I focused on learning PHP to a level where I felt comfortable programming with it on my own. In the meantime of these years (2. and 3. year of high school) I learned the basics of Python then some basics of Java and then the basics of JavaScript. </p>
-            <p> As of now I am trying to learn JavaScript at a higher level, I also did some tutorials for some MERN stack web apps, some Node.js and some ECMAScript 6. I am still working with PHP and MySql, where I am learning OOP in PHP and after that I am aiming to learn a PHP framework. In the future I am looking at some Python, where I would focus on data analysis and some more Java as I would need it in school/university. </p>
-
+            <p>I'm Leon Sovič, a full-time student studying Computer Science and Information Technologies at FERI. I've been programming since high school.</p> 
+            <p>I have some personal and university projects listed on my GitHub profile.</p>
+            <p>My expertise lies in programming languages such as C, C++, JavaScript, React, Node.js, Express.js, PHP, Python(scripting and OpenCV), and scripting with Bash. Additionally, I have experience working with relational databases, specifically in SQL, as well as NoSQL databases like MongoDB. I also possess a solid understanding of computer networks, web development, a good grasp of Linux systems and basic computer vision knowledge.</p>
+            <p>Apart from my technical skills, I am fluent in English and have a good understanding of German, although I haven't been actively using it lately.</p>
         </div>
 
         <div id="lang">
-            <h2>Languages</h2>
-            <p><img src="img/c.png" alt="c icon" height="50px"> <span> The first language that I have learned is non OOP in C++ or C so I am most familiar with it. I have used it in robotics (simulation) and in a programming competition. </span></p>
-            <p><img src="img/php.jpg" alt="php icon" height="50px"> <span> The first backend language that I have learned is php so I am most familiar with its basics and some more advanced parts of it. </span></p>
-            <p><img src="img/html.png" alt="html icon" height="50px"> <span> I know the main point of HTML and am good at it. I think of it as a necessary tool for web development. </span></p>
-            <p><img src="img/css.png" alt="css icon" height="50px"> <span> Like HTML it's a common tool and part of the wider knowledge of web development that I have. </span></p>
-            <p><img src="img/javascript.png" alt="javascript icon" height="50px"> <span> I know the basics of JavaScript and I am still learning it. I am trying to learn a bit more of backend JavaScript programming with Node.js. </span></p>
-            <p><img src="img/python.png" alt="python icon" height="50px"> <span> I know the basics but I am not confident in using Python on my own (without the help of the internet). </span></p>
-            <p><img src="img/java.png" alt="java icon" height="50px"> <span> Similar to my skill in Python, I am not confident in my skills in Java but I know some basics. </span></p>
+            <h2>Skills</h2>
+            <div class="grid">
+                <p>C++, C</p>
+                <p>Python</p>
+                <p>JavaScript / NodeJS / React / Express</p>
+                <p>Kotlin, Java</p>
+                <p>SQL, MongoDB</p>
+                <p>C#, WPF, Unity</p>
+                <p>PHP, HTML, CSS, Bootstrap, Tailwind</p>
+                <p>Docker, Linux, Git, GitHub</p>
+            </div>
         </div>
 
         <div id="contact">
             <h2>Contact</h2>
-            <p><a href="https://github.com/SovicLeon" target="blank"><i class="fa fa-github"></i> My Github </a></p>
             <p><span><i class="fa fa-envelope"></i> My email: sovicleon@gmail.com </span></p>
+            <p><a href="https://github.com/SovicLeon" target="blank"><i class="fa fa-github"></i> My Github </a></p>
         </div>
 
     </main>
 
     <footer>
-        <p>Created by Leon Sovič</p>
+        <p><i class="fa-regular fa-copyright"></i> Leon Sovič - 2023</p>
     </footer>
 
     <script>
