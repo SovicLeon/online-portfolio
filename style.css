@@ -70,7 +70,7 @@ nav a.icon {
     width: 50%;
 }
 
-#projects {
+.projects {
     display: inline-block;
     width: 95%;
     text-align: center;
@@ -87,7 +87,7 @@ nav a.icon {
     grid-column: 1 / span 2;
 }
 
-#projects h2 {
+.projects h2 {
     color: #3B8BEB;
 }
 
@@ -252,7 +252,7 @@ footer {
         width: 100%;
     }
 
-    #projects {
+    .projects {
         font-size: 20px;
         padding: 3% 0%;
         width: 100%;
